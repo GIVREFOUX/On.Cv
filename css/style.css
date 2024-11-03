@@ -245,23 +245,20 @@ img
 
 .home__img
 {
-    padding-left: .8rem;
     width: 160px;
     height: 160px;
     background-color: var(--first-color);
     border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto var(--mb-2);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto var(--mb-2);
 }
 
-.home__img img
+.home__img i
 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    font-size: 100px;
+    color: var(--first-color-lighten);
 }
 
 .home__title
@@ -624,6 +621,15 @@ img
 {
     width: 220px;
     justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project__img i
+{
+    font-size: 180px;
+    color: var(--first-color-lighten);
 }
 
 /* ------------------------------ Works ----------------------------- */
