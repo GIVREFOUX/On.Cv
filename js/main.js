@@ -42,4 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('imageError', (e) => {
         console.error('Image failed to load:', e.detail.src);
     });
+
+    // Test if CSS is loaded
+    const style = getComputedStyle(document.body);
+    if (style.backgroundColor !== 'rgb(255, 250, 250)') { // var(--first-color-lighten)
+        console.error('CSS not loaded properly!');
+    }
 }); 
