@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZINEBI</title>
     <meta name="author" content="Computer Science | Hard/Software, Networking Specialist">
-    <meta name="description" content="">
-    <meta name="keywords" content="I bring a wealth of experience in the domain of Computer Science, specializing in hardware, software, and networking. My passion for technology and commitment to learning make me a quick learner, ensuring I adapt seamlessly to evolving industry dynamics. As an IT Specialist, I excel in efficiently resolving hardware and software issues, with a particular focus on network security and system administration.">
+    <meta name="description" content="Portfolio of Abdelmoughite ZINEBI - Computer Science and Networking Specialist">
+    <meta name="keywords" content="Computer Science, Hardware, Software, Networking, IT Specialist">
+    <title>ZINEBI</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="img\z.png"/>
+    <link rel="shortcut icon" type="image/png" href="assets/images/z.png"/>
 
-    <!------------------ External CSS ------------------>
-    <link rel="stylesheet" href="style.css">
-
-    <!------------------ Box Icons ------------------>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <!------------------------ Header starts from here ----------------------->
+    <!-- Header -->
     <header class="l-header">
         <nav class="nav bd-grid">
             <div class="nav__toggle" id="nav-toggle">
@@ -35,56 +33,55 @@
                 </div>
 
                 <ul class="nav__list">
-                    <li class="nav__item"> <a href="#home" class="nav__link active"> Home </a></li>
-                    <li class="nav__item"> <a href="#about" class="nav__link"> About </a></li>
-                    <li class="nav__item"> <a href="#skills" class="nav__link"> Skills </a></li>
-                    <li class="nav__item"> <a href="#services" class="nav__link"> Services </a></li>
-                    <li class="nav__item"> <a href="#works" class="nav__link"> Works </a></li>
-                    <li class="nav__item"> <a href="#contact" class="nav__link"> Contact </a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <!------------------------ Header ends from here ----------------------->
 
-    <!------------------------ Body starts from here ----------------------->
     <main class="l-main">
-        <!------------------- Home ------------------->
+        <!-- Home -->
         <section class="home" id="home">
             <div class="home__container bd-grid">
                 <div class="home__data">
                     <div class="home__img">
-                        <img src="img\meh.png" alt="Abdelmoughite ZINEBI" title="Abdelmoughite ZINEBI">
+                        <img 
+                            class="lazy-image"
+                            src="assets/images/placeholder.jpg"
+                            data-src="assets/images/meh.png" 
+                            alt="Abdelmoughite ZINEBI" 
+                            title="Abdelmoughite ZINEBI"
+                        >
                     </div>
 
                     <h1 class="home__title">Abdelmoughite ZINEBI</h1>
                     <span class="home__profession">Computer Science | Hard/Software, Networking Specialist</span>
 
                     <div class="home__social">
-                        <a href="#" class="home__social-link"><i class='bx bxl-linkedin'></i></a>
-                        <a href="#" class="home__social-link"><i class='bx bxl-github' ></i></a>
-                        <a href="#" class="home__social-link"><i class='bx bxl-facebook' ></i></a>
-                        <a href="#" class="home__social-link"><i class='bx bxl-behance' ></i></a>
+                        <a href="#" class="home__social-link" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="home__social-link" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="#" class="home__social-link" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="home__social-link" aria-label="Behance"><i class='bx bxl-behance'></i></a>
                     </div>
 
-                    <a href="cv\CV.pdf" download="CV.pdf" class="button home__button">Download Resume</a>
+                    <a href="assets/cv/CV.pdf" download="CV.pdf" class="button home__button">Download Resume</a>
                 </div>
             </div>
         </section>
 
-        <!-------------------------- About ---------------------------->
-        <section class="about section" id="about">
-            <span class="section-subtitle">My intro</span>
+        <!-- About section remains the same -->
+        // ... existing about section code ...
 
-            <h2 class="section-title">About Me</h2>
+        <!-- Skills section remains the same -->
+        // ... existing skills section code ...
 
-            <div class="about__container bd-grid">
-                <div class="about__data">
-                    <p class="about__description">
-                        I bring a wealth of experience in the domain of Computer Science, specializing in hardware, software, and networking. My passion for technology and commitment to learning make me a quick learner, ensuring I adapt seamlessly to evolving industry dynamics. As an IT Specialist, I excel in efficiently resolving hardware and software issues, with a particular focus on network security and system administration.
-                    </p>
-                    <img src="img\meh.png" alt="Abdelmoughite ZINEBI" title="Abdelmoughite ZINEBI" class="about__img">
-                </div>
+        <!-- Education section remains the same -->
+        // ... existing education section code ...
 
                 <div>
                     <div class="about__information">
@@ -327,57 +324,57 @@
             <h2 class="section-title">Recent Works</h2>
 
             <div class="works__container bd-grid">
-                <div class="works__img">
-                    <img src="img/work-1.png" alt="App Design" title="App Design">
-
+                <div class="works__content">
+                    <i class='bx bx-support works__icon'></i>
                     <div class="works__data">
+                        <h3 class="works__title">Senior Technician</h3>
+                        <span class="works__description">Technical ProSupport Specialist</span>
                         <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Senior Technician, Technical ProSupport</span>
                     </div>
                 </div>
 
-                <div class="works__img">
-                    <img src="img/work-2.png" alt="Web App" title="Web App">
-
+                <div class="works__content">
+                    <i class='bx bx-desktop works__icon'></i>
                     <div class="works__data">
+                        <h3 class="works__title">IT & Helpdesk</h3>
+                        <span class="works__description">Technical Support and System Administration</span>
                         <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title">IT & Helpdesk</span>
                     </div>
                 </div>
 
-                <div class="works__img">
-                    <img src="img/work-3.png" alt="E-commerce" title="E-commerce">
-
+                <div class="works__content">
+                    <i class='bx bx-data works__icon'></i>
                     <div class="works__data">
+                        <h3 class="works__title">Senior QM-CM</h3>
+                        <span class="works__description">Quality and Change Management</span>
                         <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title"> Senior QM-CM</span>
                     </div>
                 </div>
 
-                <div class="works__img">
-                    <img src="img/work-4.jpg" alt="Agency Site" title="Agency Site">
-
+                <div class="works__content">
+                    <i class='bx bx-server works__icon'></i>
                     <div class="works__data">
+                        <h3 class="works__title">Infrastructure</h3>
+                        <span class="works__description">Server & Network Management</span>
                         <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Agency Site</span>
                     </div>
                 </div>
 
-                <div class="works__img">
-                    <img src="img/work-5.jpg" alt="Network Site" title="Agency Site">
-
+                <div class="works__content">
+                    <i class='bx bx-network-chart works__icon'></i>
                     <div class="works__data">
+                        <h3 class="works__title">Network Design</h3>
+                        <span class="works__description">Network Architecture & Implementation</span>
                         <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Network Site</span>
                     </div>
                 </div>
 
-                <div class="works__img">
-                    <img src="img/work-6.jpg" alt="Hosting Site" title="Hosting Site">
-
+                <div class="works__content">
+                    <i class='bx bx-cloud works__icon'></i>
                     <div class="works__data">
+                        <h3 class="works__title">Cloud Services</h3>
+                        <span class="works__description">Cloud Infrastructure & Solutions</span>
                         <a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-                        <span class="works__title">Payment Site</span>
                     </div>
                 </div>
             </div>
@@ -386,17 +383,19 @@
         <!----------------------------------- Contact ------------------------------>
        <section class="contact section" id="contact">
     <span class="section-subtitle">Contact Me</span>
-    <h2 class "section-title">Get In Touch</h2>
+            <h2 class="section-title">Get In Touch</h2>
 
     <div class="contact__container bd-grid">
+                <form id="contactForm" class="contact-form" action="php/contact.php" method="POST">
             <div class="contact__inputs">
-                <input type="text" name="name" placeholder="Name" class="contact__input">
-                <input type="email" name="email" placeholder="Email" class="contact__input">
+                        <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
             </div>
 
-            <input type="text" name="project" placeholder="Project" class="contact__input">
-            <textarea name="message" placeholder="Message" id="" cols="0" rows="10" class="contact__input"></textarea>
-            <input type="submit" value="Send Message" class="button contact__button">
+                    <input type="text" name="project" placeholder="Project" class="contact__input" required>
+                    <textarea name="message" placeholder="Message" rows="10" class="contact__input" required></textarea>
+                    <button type="submit" class="button contact__button">Send Message</button>
+                </form>
 
         <div>
             <div class="contact__info">
@@ -418,30 +417,62 @@
         </div>
     </div>
 </section>
-
     </main>
-    <!------------------------ Body ends from here ----------------------->
 
-    <!------------------------ Footer starts from here ----------------------->
+    <!-- Footer -->
     <footer class="footer section">
         <div class="footer__container bd-grid">
             <h1 class="footer__title">ZINEBI</h1>
-            <p class="footer-description">
-                Computer Science | Hard/Software, Networking Specialist
-            </p>
+            <p class="footer-description">Computer Science | Hard/Software, Networking Specialist</p>
 
             <div class="footer__social">
-                <a href="#" class="footer__link"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="footer__link"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="footer__link"><i class="bx bxl-linkedin"></i></a>
+                <a href="#" class="footer__link" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="footer__link" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="footer__link" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
             </div>
 
-            <p class="footer-copy">All rights reserved by ZINEBI - 2023</p>
+            <p class="footer__copy">All rights reserved by ZINEBI - <span id="currentYear">2023</span></p>
         </div>
     </footer>
-    <!------------------------ Footer ends from here ----------------------->
 
-    <!------------------------- Javascript file ---------------------------->
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script type="module">
+        import { LazyLoader } from './js/modules/lazyLoading.js';
+        
+        // Initialize lazy loading
+        const lazyLoader = new LazyLoader({
+            rootMargin: '100px 0px',
+            selector: '.lazy-image'
+        });
+
+        // Update current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Handle form submission
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            try {
+                const formData = new FormData(e.target);
+                const response = await fetch('php/contact.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    alert(result.message);
+                    e.target.reset();
+                } else {
+                    alert(result.errors.join('\n'));
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again later.');
+            }
+        });
+    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>

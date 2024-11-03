@@ -628,52 +628,57 @@ img
 /* ------------------------------ Works ----------------------------- */
 .works__container
 {
-    justify-items: center;
     row-gap: 2rem;
 }
 
-.works__img
-{
+.works__content {
     position: relative;
-    overflow: hidden;
-    border-radius: .5rem;
-}
-
-.works__data
-{
-    position: absolute;
-    bottom: -100%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #3741fa81;
+    background-color: var(--first-color-light);
+    padding: 2rem;
     border-radius: .5rem;
     transition: .3s;
 }
 
-.works__link
-{
-    display: inline-flex;
-    font-size: 1.5rem;
-    background-color: var(--first-color-lighten);
+.works__content:hover {
+    background-color: var(--first-color);
+    transform: translateY(-0.5rem);
+}
+
+.works__icon {
+    font-size: 3rem;
     color: var(--first-color);
-    padding: .25rem;
-    border-radius: .25rem;
     margin-bottom: var(--mb-2);
 }
 
-.works__title
-{
-    font-size: var(--h2-font-size);
+.works__content:hover .works__icon {
     color: var(--first-color-lighten);
 }
 
-.works__img:hover .works__data
-{
-    bottom: 0;
+.works__title {
+    font-size: var(--h3-font-size);
+    color: var(--first-color-dark);
+    margin-bottom: var(--mb-1);
+}
+
+.works__description {
+    font-size: var(--small-font-size);
+}
+
+.works__content:hover .works__title,
+.works__content:hover .works__description {
+    color: var(--first-color-lighten);
+}
+
+.works__link {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.25rem;
+    color: var(--first-color);
+}
+
+.works__content:hover .works__link {
+    color: var(--first-color-lighten);
 }
 
 /* ----------------------------- Contact ---------------------- */
